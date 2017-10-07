@@ -41,6 +41,9 @@ Dependeny declaration for Maven POM:
 |elasticsearch.type|Document type of documents containing sample results that are to be added on Elasticsearch server||
 |timezone.id|Timezone identifier|GMT|
 |result.attributes.excluded|Comma-separated names of sample result attributes that shall not be passed to Elasticsearch server. Valid attributes' names: Timestamp, StartTime, EndTime, Time, Latency, ConnectTime, IdleTime, SampleLabel, GroupName, ThreadName, ResponseCode, IsResponseCodeOk, IsSuccessful, SampleCount, ErrorCount, ContentType, MediaType, DataType, RequestHeaders, ResponseHeaders, HeadersSize, SamplerData, ResponseMessage, ResponseData, BodySize, Bytes|All attributes are passed|
+|elasticsearch.connection.proxy.url|URL to proxy server to be used when establishing connection to Elasticsearch server||
+|elasticsearch.connection.proxy.user|User name for authentication of requests sent via proxy|Empty (no authentication)|
+|elasticsearch.connection.proxy.password|Password for authentication of requests sent via proxy|Empty (no authentication)|
 |elasticsearch.connection.trustAllSslCertificates|Enable trust all SSL certificates when establishing connection to Elasticsearch server. Possible values: true / false. Not recommended for production usage due to security considerations|false|
 
 
